@@ -7,5 +7,8 @@ Agile
 Git
 ![image alt](https://github.com/VaishnaviReddy1224/5534825_Vaishnavi_P/blob/6b48f6c4e075feb489004773e2d64ed42860a243/Git.jpg)
 
+Linux
+![image alt](https://github.com/VaishnaviReddy1224/5534825_Vaishnavi_P/blob/02359873cf09cb06231e9d6bc376eee9ef406f09/Linux%20.pdf)
+
 
 
