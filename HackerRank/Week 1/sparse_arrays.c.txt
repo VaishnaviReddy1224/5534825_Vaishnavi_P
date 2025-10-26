@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int N, Q;
+    char N_array[1000][21];  
+    char query[21];
+
+    
+    scanf("%d", &N);
+
+   
+    for (int i = 0; i < N; i++) {
+        scanf("%s", N_array[i]);
+    }
+
+    
+    scanf("%d", &Q);
+
+    
+    for (int i = 0; i < Q; i++) {
+        scanf("%s", query);
+        int count = 0;
+
+        for (int j = 0; j < N; j++) {
+            if (strcmp(query, N_array[j]) == 0) {
+                count++;
+            }
+        }
+
+        printf("%d\n", count);
+    }
+
+    return 0;
+}
+
+

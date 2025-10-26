@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    char time[11];  // Example: "07:05:45PM"
+    scanf("%s", time);
+
+    int hour = (time[0] - '0') * 10 + (time[1] - '0');  // extract hour
+
+    // If it's PM and not 12 PM, add 12 hours
+    if (time[8] == 'P' && hour != 12) {
+        hour += 12;
+    }
+    // If it's AM and 12 AM, make hour 00
+    else if (time[8] == 'A' && hour == 12) {
+        hour = 0;
+    }
+
+    // Print in 24-hour format (HH:MM:SS)
+    printf("%02d:%c%c:%c%c\n", hour, time[3], time[4], time[6], time[7]);
+
+    return 0;
+}
+
+
