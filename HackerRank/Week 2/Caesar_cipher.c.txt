@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+ÿ ÿ int n, k;
+ÿ ÿ scanf("%d", &n); ÿ ÿ ÿ ÿ ÿ 
+ÿ ÿ char str[1001];
+ÿ ÿ scanf("%s", str); ÿ ÿ ÿ ÿ ÿ
+ÿ ÿ scanf("%d", &k); ÿ ÿ ÿ ÿ ÿ 
+
+ÿ ÿ for (int i = 0; i < n; i++) {
+ÿ ÿ ÿ ÿ char c = str[i];
+ÿ ÿ ÿ ÿ if (c >= 'a' && c <= 'z') {
+ÿ ÿ ÿ ÿ ÿ ÿ str[i] = ((c - 'a' + k) % 26) + 'a';
+ÿ ÿ ÿ ÿ } else if (c >= 'A' && c <= 'Z') {
+ÿ ÿ ÿ ÿ ÿ ÿ str[i] = ((c - 'A' + k) % 26) + 'A';
+ÿ ÿ ÿ ÿ }
+ÿ ÿ ÿ ÿ 
+ÿ ÿ }
+
+ÿ ÿ printf("%s\n", str);
+ÿ ÿ return 0;
+}
+
+
